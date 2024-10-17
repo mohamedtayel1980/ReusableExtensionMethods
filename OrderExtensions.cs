@@ -6,8 +6,13 @@ public static class OrderExtensions
     {
         return $"Order Report: \nOrder ID: {order.Id}\nProduct: {order.ProductName}\nQuantity: {order.Quantity}\nOrder Date: {order.OrderDate:d}";
     }
-    public static string GenerateReport(this Order order, string footer)
+    //public static string GenerateReport(this Order order, string footer)
+    //{
+    //    return $"Order Report: \nOrder ID: {order.Id}\nProduct: {order.ProductName}\nQuantity: {order.Quantity}\nOrder Date: {order.OrderDate:d}\nFooter: {footer}";
+    //}
+
+    public static string GenerateReport(this Order order, string header)
     {
-        return $"Order Report: \nOrder ID: {order.Id}\nProduct: {order.ProductName}\nQuantity: {order.Quantity}\nOrder Date: {order.OrderDate:d}\nFooter: {footer}";
+        return "Extension Method called!";
     }
 }

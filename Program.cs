@@ -18,8 +18,8 @@
             string reportWithHeader = order.GenerateReport(header: "Order Summary");
             Console.WriteLine(reportWithHeader);
 
-            string reportWithFooter = order.GenerateReport(footer:"Thank you for your order!");
-            Console.WriteLine(reportWithFooter);
+            string reportWithhHeaderEx = OrderExtensions.GenerateReport(order,header: "Thank you for your order!");
+            Console.WriteLine(reportWithhHeaderEx);
         }
     }
 }
